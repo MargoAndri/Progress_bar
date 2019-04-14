@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Progress Bar</title>
+    <link  href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+</div>
+
+<script src="progress_bar.js"></script>
+<script>
+    // Пример использования
+    const PROGRESS = 30;
+    const section = document.querySelector(`.container`);
+    let counter = 0;
+    const interval = setInterval(() => {
+        if(counter >= PROGRESS) {
+            clearInterval(interval);
+        }
+        getProgressBar(section, counter);
+        counter++;
+    }, 100);
+</script>
+</body>
+</html>
