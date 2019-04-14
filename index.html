@@ -13,14 +13,14 @@
 <script src="progress_bar.js"></script>
 <script>
     // Пример использования
-    const PROGRESS = 30;
+    const PROGRESS = 70;
     const section = document.querySelector(`.container`);
     let counter = 0;
     const interval = setInterval(() => {
         if(counter >= PROGRESS) {
             clearInterval(interval);
         }
-        getProgressBar(section, counter);
+        renderProgressBar(section, counter);
         counter++;
     }, 100);
 </script>

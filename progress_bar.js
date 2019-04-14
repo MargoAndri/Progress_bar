@@ -13,13 +13,13 @@ const createElement = (template) => {
     return newElement.firstChild;
 };
 
-const getProgressBar = (container, percent) => {
+const renderProgressBar = (container, percent) => {
     container.innerHTML = ``;
     let newBar = createElement(getTemplate());
     container.appendChild(newBar);
     const percentProgress = newBar.querySelector(`.percent_progress`);
     const percentNumber = newBar.querySelector(`.percent_number`);
     percentProgress.style.width = `${percent}%`;
-    percentNumber.textContent = `${percent}%`;
+    percentNumber.textContent = `${percent} %`;
 };
 

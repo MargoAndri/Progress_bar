@@ -1,23 +1,22 @@
 .bar {
     width: 100%;
-    height: 40px;
-    border: 1px solid black;
+    height: 25px;
+    border: 1px solid #aa99aa;
     text-align: center;
     position: relative;
 }
 
 .percent_progress {
     width: 1%;
-    background-color: cornflowerblue;
-    height: 40px;
+    background-color: #5e9eed;
+    height: 25px;
 }
 
 .percent_number {
     position: absolute;
     top: 5px;
-    margin: 5px;
     line-height: 18px;
-    color: black;
+    color: #333333;
 }
 
 .container {
